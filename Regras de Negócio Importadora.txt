@@ -1,0 +1,33 @@
+﻿Regras de Negócio:
+
+RN1 - O sistema deve registrar os pedidos dos clientes, informando os seguintes dados: 
+Número do Pedido, Data, Nome Vendedor, Nome Cliente, Telefone, E-mail, QTD garrafas, 
+Tipo de Vinho, Nome do Vinho, País do Vinho, Uva do Vinho, Safra do Vinho e Valor do vinho.
+OBS:Se for pedido mais de 1 garrafa do mesmo vinho, o valor unitário deve ser multiplicado 
+pela quantidade de garrafas.
+
+RN2 - Estamos com a entrega limitada por conta da pandemia, então o sistema deve rejeitar 
+pedidos com mais de 100 garrafas.
+
+RN3 - Ao registrar o pedido, o sistema deve calcular e informar no final, a soma total
+do número de garrafas e a soma total do valor do pedido, independente do tipo de vinho
+solicitado.OBS: O valor Total deve ser arredondado.
+
+RN4 Se um cliente comprar a partir de 15 vinhos, deve ser concedido um desconto de 10% 
+sobre o valor total daquele pedido.
+
+RN5 O Sistema deve gerar um relatório de venda em arquivo .doc com: Número do Pedido, 
+Data Pedido, Nome do Vendedor, Nome do cliente, Telefone Cliente, Email Cliente, 
+Ítens do Pedido e Valor Total do pedido.
+
+RN6 Para entregas fora da cidade de São Paulo, deve ser cobrado R$ 20 de frete por garrafa. 
+O valor deve ser somado ao valor total do pedido e informado no ato do pedido. 
+
+RN7 O sistema deve informar quem foi o vendedor, creditar em sua conta uma comissão de 2% 
+sobre o total de cada venda, e atualizar a comissão total a cada venda realizada.ATENÇÃO: a 
+comissão do vendedor deve ser calculada somente sobre o valor total de produtos vendidos, 
+devendo ser excluído o valor de frete na hora de calcular a comissão.
+
+
+RN8 O sistema deve enviar um relatório em arquivo .doc para a logística ao final do dia, com o 
+endereço de entrega dos pedidos emitidos.
